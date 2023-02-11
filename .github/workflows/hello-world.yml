@@ -4,5 +4,9 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
+      - name: build
         run: echo "Hello World!"
+      - name: test
+        run: echo "test build"
+      - name: deploy
+        run: echo "deploying app"
